@@ -4,7 +4,7 @@
 import { useState,useEffect } from "react"
 import MetricCard from "@/components/ui/metric-card"
 // import ClientsTable from "@/clients/clients-table"
-import ActivityFeed from "./Component/activity/activity-feed"
+import ActivityFeed from "./Component/Activity/activity-feed"
 import { Button } from "@/components/ui/button"
 import { Search } from "lucide-react"
 import ViewToggle from "@/components/ui/view-toggle"
