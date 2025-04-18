@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 import Header from "./../../../../components/IndividualInvoice/Components/Header"
 import ListView from "./../../../../components/IndividualInvoice/Components/ListView"
 import TabNavigation from "./../../../../components/IndividualInvoice/Components/TabNavigation"
-import { invoiceData } from "./../../../../components/IndividualInvoice/data/invoices"
 import BoardView from './../../../../components/IndividualInvoice/Components/BoardView';
 import MaxWidthWrapper from './../../../../components/MaxWidthWapper/MaxWidthWrapper';
 import { IndividualClientData } from './../../../../Api/ClientApi/Api';
