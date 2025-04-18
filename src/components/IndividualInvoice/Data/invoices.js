@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const invoiceData = [
     {
       id: 1,

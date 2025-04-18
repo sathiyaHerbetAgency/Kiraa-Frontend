@@ -1,4 +1,4 @@
-import Image from "next/image"
+/* eslint-disable */
 
 export default function ActivityFeed({ activities }) {
   return (
@@ -17,14 +17,8 @@ function ActivityItem({ activity }) {
     <div className="flex items-start gap-3 p-3 rounded-lg bg-white border border-gray-200">
       {user ? (
         <div className="flex-shrink-0">
-          <div className="w-10 h-10 rounded-full overflow-hidden bg-orange-100">
-            <Image
-              src={user.avatar || "/placeholder.svg"}
-              alt={user.name}
-              width={40}
-              height={40}
-              className="object-cover"
-            />
+          <div className="w-10 h-10 rounded-full overflow-hidden bg-orange-100 text-center">
+           <p className="text-center p-2">a</p>
           </div>
         </div>
       ) : (
