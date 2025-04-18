@@ -1,3 +1,4 @@
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
@@ -11,6 +12,7 @@ export const metadata = {
   title: "KiraKira",
   description: "Invoice Management App",
 };
+
 
 export default function RootLayout({ children }) {
   return (
