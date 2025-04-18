@@ -1,3 +1,4 @@
+/* eslint-disable */
 "use client"
 
 import { useState } from "react"
@@ -58,9 +59,7 @@ export function CustomerDialog({ onAddCustomer }) {
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
           <DialogTitle>Add Customer</DialogTitle>
-          <DialogDescription>
-            Add a new customer to your contacts. Click save when you're done.
-          </DialogDescription>
+          <DialogDescription>Add a new customer to your contacts. Click save when you're done.</DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid gap-2">

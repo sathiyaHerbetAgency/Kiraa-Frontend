@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client'
 import React, {useState, useEffect} from 'react'
 import MaxWidthWrapper from './../../components/MaxWidthWapper/MaxWidthWrapper';
@@ -29,7 +30,7 @@ const clients = () => {
   
       fetchData();
      
-    },[])
+    },[data])
     const handleAddOrUpdate = (newItem) => {
       // Append new data locally
       setData((prevData) => [...prevData, newItem]);

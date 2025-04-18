@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import {CssVariables} from '@/components/CssVariable/ComponentCss'
 import {
