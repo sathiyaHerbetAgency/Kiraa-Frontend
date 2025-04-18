@@ -6,6 +6,7 @@ import Footer from "@/components/footer/Footer";
 import { ToastContainer, toast } from 'react-toastify';
 import { Sidebar } from './../components/Layout/sidebar';
 import MainLayoutWrapper from './../components/Layout/MainLayout';
+import { Suspense } from 'react';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -21,9 +22,11 @@ export default function RootLayout({ children }) {
         <div className="absolute">
           <ToastContainer />
         </div>
+        <Suspense fallback={<div>Loading...</div>}>
         <MainLayoutWrapper>
         {children}
         </MainLayoutWrapper>
+        </Suspense>
       </body>
     </html>
   );

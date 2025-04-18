@@ -13,7 +13,7 @@ import { CssVariables } from './../CssVariable/ComponentCss';
 import { createClients } from './../../actions/invoiceActions';
 import { ClientSave,ClientDatas } from './../../Api/ClientApi/Api';
 
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useEffect,useState } from 'react';
 const ClientTable = ({data,onRowClick}) => {
   //   const data=   [
