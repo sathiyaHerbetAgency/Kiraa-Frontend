@@ -1,11 +1,17 @@
+import { Separator } from '@/components/ui/separator';
+
 export default function Footer() {
   return (
-    <footer className="bg-color-dark-blue h-14 --center-all">
+    <>
+     <Separator className="border-[#000] border-t-2" />
+    <footer className=" h-14 --center-all">
+     
       <div className="container flex-center">
-        <p className="text-sm text-white">
-          © ZinoTrust Academy - All Rights Reserved
+        <p className="text-sm text-black">
+          © Kirakira - All Rights Reserved
         </p>
       </div>
     </footer>
+    </>
   );
 }

@@ -1,0 +1,156 @@
+{
+   
+    "categories": [
+      {
+        "name": "ASSETS",
+        "range": "1000 - 1999",
+        "accounts": [
+          { "code": "1100", "name": "Cash in Hand" },
+          { "code": "1105", "name": "Cash at Bank" },
+          { "code": "1110", "name": "Petty Cash" },
+          { "code": "1120", "name": "Accounts Receivable (Debtors)" },
+          { "code": "1130", "name": "Less: Allowance for Doubtful Debts" },
+          { "code": "1140", "name": "Inventory (Stock)" },
+          { "code": "1150", "name": "Prepaid Expenses" },
+          { "code": "1160", "name": "Input Tax (SST/GST)" },
+          { "code": "1170", "name": "Deposits & Advances Paid" },
+          { "code": "1200", "name": "Land & Buildings" },
+          { "code": "1210", "name": "Furniture & Fixtures" },
+          { "code": "1220", "name": "Office Equipment" },
+          { "code": "1230", "name": "Vehicles" },
+          { "code": "1240", "name": "Machinery & Tools" },
+          { "code": "1250", "name": "Computers & Software" },
+          { "code": "1260", "name": "Less: Accumulated Depreciation - Buildings" },
+          { "code": "1265", "name": "Less: Accumulated Depreciation - Furniture & Fixtures" },
+          { "code": "1270", "name": "Less: Accumulated Depreciation - Office Equipment" },
+          { "code": "1275", "name": "Less: Accumulated Depreciation - Vehicles" },
+          { "code": "1280", "name": "Less: Accumulated Depreciation - Machinery & Tools" },
+          { "code": "1285", "name": "Less: Accumulated Depreciation - Computers & Software" },
+          { "code": "1300", "name": "Investments (Stocks, Bonds)" },
+          { "code": "1310", "name": "Goodwill" },
+          { "code": "1320", "name": "Intangible Assets (Patents, Trademarks)" },
+          { "code": "1330", "name": "Less: Amortization of Intangible Assets" }
+        ]
+      },
+      {
+        "name": "LIABILITIES",
+        "range": "2000 - 2999",
+        "accounts": [
+          { "code": "2100", "name": "Accounts Payable (Creditors)" },
+          { "code": "2110", "name": "Sales Tax Payable (SST)" },
+          { "code": "2120", "name": "Accrued Liabilities (Expenses Payable)" },
+          { "code": "2130", "name": "Wages & Salaries Payable" },
+          { "code": "2140", "name": "Other Payables & Deposits Received" },
+          { "code": "2150", "name": "Loan Interest Payable" },
+          { "code": "2160", "name": "Unearned Revenue (Advance Payments Received)" },
+          { "code": "2170", "name": "Corporate Tax Payable" },
+          { "code": "2180", "name": "Deferred Tax Liability" },
+          { "code": "2190", "name": "Provision for Tax" },
+          { "code": "2240", "name": "Amount Owed to Director(s)" },
+          { "code": "2250", "name": "Amount Owed to Shareholder(s)" },
+          { "code": "2260", "name": "Director?s Personal Expenses Paid by Company" },
+          { "code": "2200", "name": "Bank Loan Payable" },
+          { "code": "2210", "name": "Hire Purchase Payable" },
+          { "code": "2220", "name": "Mortgage Payable" },
+          { "code": "2230", "name": "Director?s Loan Payable" }
+        ]
+      },
+      {
+        "name": "EQUITY",
+        "range": "3000 - 3999",
+        "accounts": [
+          { "code": "3000", "name": "Share Capital" },
+          { "code": "3100", "name": "Retained Earnings" },
+          { "code": "3200", "name": "Current Year Earnings/Loss" },
+          { "code": "3210", "name": "Prior Year Adjustments" },
+          { "code": "3300", "name": "Owner?s Drawings" },
+          { "code": "3400", "name": "Dividends Payable" },
+          { "code": "3500", "name": "Capital Injection from Director(s)/Shareholder(s)" }
+        ]
+      },
+      {
+        "name": "REVENUE",
+        "range": "4000 - 4999",
+        "accounts": [
+          { "code": "4000", "name": "Sales Revenue" },
+          { "code": "4100", "name": "Service Revenue" },
+          { "code": "4200", "name": "Rental Income" },
+          { "code": "4300", "name": "Commission Income" },
+          { "code": "4400", "name": "Interest Income" },
+          { "code": "4500", "name": "Other Income" },
+          { "code": "4600", "name": "Discounts Given" }
+        ]
+      },
+      {
+        "name": "COST OF GOODS SOLD",
+        "range": "5000 - 5999",
+        "accounts": [
+          { "code": "5000", "name": "Purchases of Goods" },
+          { "code": "5100", "name": "Direct Material Costs" },
+          { "code": "5200", "name": "Direct Labour Costs" },
+          { "code": "5300", "name": "Factory Overheads" },
+          { "code": "5400", "name": "Freight & Transportation (Inbound)" },
+          { "code": "5500", "name": "Inventory Adjustments" },
+          { "code": "5600", "name": "Cost of Sales (Services)" }
+        ]
+      },
+      {
+        "name": "OPERATING EXPENSES",
+        "range": "6000 - 6999",
+        "accounts": [
+          { "code": "6100", "name": "Advertising & Marketing" },
+          { "code": "6110", "name": "Bank Charges" },
+          { "code": "6120", "name": "Depreciation Expense" },
+          { "code": "6130", "name": "Office Supplies" },
+          { "code": "6140", "name": "Repairs & Maintenance" },
+          { "code": "6150", "name": "Telephone & Internet" },
+          { "code": "6160", "name": "Travel & Entertainment" },
+          { "code": "6170", "name": "Insurance" },
+          { "code": "6180", "name": "Licenses & Permits" },
+          { "code": "6190", "name": "Professional Fees (Accounting, Legal, Audit)" },
+          { "code": "6200", "name": "Salaries & Wages" },
+          { "code": "6210", "name": "EPF (Employer Contribution)" },
+          { "code": "6220", "name": "SOCSO & EIS (Employer Contribution)" },
+          { "code": "6230", "name": "Bonus & Incentives" },
+          { "code": "6240", "name": "Staff Training & Development" },
+          { "code": "6250", "name": "Director?s Salary" },
+          { "code": "6260", "name": "Director?s Fees" },
+          { "code": "6270", "name": "Director?s Bonus & Incentives" },
+          { "code": "6280", "name": "Director?s EPF (Employer Contribution)" },
+          { "code": "6290", "name": "Director?s SOCSO & EIS (Employer Contribution)" },
+          { "code": "6295", "name": "Director?s PCB (Monthly Tax Deduction)" },
+          { "code": "6300", "name": "Electricity & Water" },
+          { "code": "6310", "name": "Office Rent" },
+          { "code": "6320", "name": "Property Taxes" },
+          { "code": "6350", "name": "Corporate Tax Expense" },
+          { "code": "6360", "name": "Deferred Tax Expense" },
+          { "code": "6370", "name": "Prior Year Tax Adjustments" },
+          { "code": "6400", "name": "Loan Interest" },
+          { "code": "6410", "name": "Hire Purchase Interest" },
+          { "code": "6420", "name": "Bank Fees & Charges" }
+        ]
+      },
+      {
+        "name": "OTHER INCOME & EXPENSES",
+        "range": "7000 - 7999",
+        "accounts": [
+          { "code": "7000", "name": "Gains/Losses from Asset Disposal" },
+          { "code": "7100", "name": "Foreign Exchange Gains/Losses" },
+          { "code": "7200", "name": "Bad Debt Expense" },
+          { "code": "7300", "name": "Tax Expense (Corporate Tax, SST, GST)" },
+          { "code": "7400", "name": "Penalties & Fines" },
+          { "code": "7500", "name": "Donations & CSR Expenses" }
+        ]
+      },
+      {
+        "name": "NON-OPERATING INCOME & EXPENSES",
+        "range": "8000 - 8999",
+        "accounts": [
+          { "code": "8000", "name": "Investment Income" },
+          { "code": "8100", "name": "Dividend Income" },
+          { "code": "8200", "name": "Unrealized Gains/Losses on Investments" }
+        ]
+      }
+    ]
+  }
+  
