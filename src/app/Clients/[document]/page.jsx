@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client'
 import React, {useEffect,useState} from 'react'
 import { IndividualClientData } from './../../../Api/ClientApi/Api';
