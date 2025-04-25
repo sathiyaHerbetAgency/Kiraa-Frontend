@@ -1,22 +1,33 @@
+// components/layout/MainLayoutWrapper.jsx
 "use client";
+
 import { usePathname } from "next/navigation";
+import Sidebar from "@/components/layout/Sidebar";
 import Header from "@/components/header/Header";
-import { Sidebar } from "@/components/Layout/sidebar";
 import Footer from "@/components/footer/Footer";
 
 export default function MainLayoutWrapper({ children }) {
   const pathname = usePathname();
-  const isLoginPage = pathname === "/login";
-  
+  const isLogin = pathname === "/login";
+
   return (
     <>
-      <div className="absolute">
-        {/* ToastContainer can be here if needed */}
-      </div>
-      {!isLoginPage && <Header />}
-      {!isLoginPage && <Sidebar />}
-      {children}
-      {!isLoginPage && <Footer />}
+      {!isLogin && <Sidebar />}
+      {!isLogin && <Header />}
+
+      {/* 
+        pt-14  → push below the fixed 3.5rem (14) header  
+        md:pl-64 → push right of the 16rem (64) sidebar on md+ screens 
+      */}
+      <main className={`${!isLogin ? "pt-14 md:pl-64" : ""}`}>
+        {children}
+      </main>
+
+      {!isLogin && (
+        <footer className="bg-white pt-4 md:pl-64">
+          <Footer />
+        </footer>
+      )}
     </>
   );
 }

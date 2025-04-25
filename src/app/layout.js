@@ -7,6 +7,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import { Sidebar } from './../components/Layout/sidebar';
 import MainLayoutWrapper from './../components/Layout/MainLayout';
 import { Suspense } from 'react';
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
