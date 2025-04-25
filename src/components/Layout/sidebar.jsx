@@ -27,24 +27,13 @@ import {
   Clock,
   ShoppingBag,
 } from "lucide-react";
-
+import { useRequireAuth } from './useRequireAuth'
 export default function Sidebar() {
-  const [checked, setChecked] = useState(false)   // ← have we verified auth yet?
+  // const [checked, setChecked] = useState(false)   // ← have we verified auth yet?
+  const [openSections, setOpenSections] = useState();
   const router = useRouter()
   const pathname = usePathname();
-  useEffect(() => {
-    // 1️⃣ Check auth
-    const token = Cookies.get('token')
-    if (!token) {
-      // use replace so user can’t “back” into a protected page
-      router.replace('/login')
-      return
-    }
-    setChecked(true)
-  }, [router])
-
-  // While we’re waiting for the token-check, render nothing (or a spinner)
-  if (!checked) return null;
+  const checked = useRequireAuth()
   const sections = [
     {
       key: "contacts",
@@ -82,12 +71,7 @@ export default function Sidebar() {
         { label: "Claims", href: "/hr/claims", Icon: ShoppingBag },
       ],
     },
-  ];
-
-  // State of which sections are open
-  const [openSections, setOpenSections] = useState({});
-
-  // On mount and whenever the path changes, open the section matching the path
+  ]
   useEffect(() => {
     const newOpen = {};
     sections.forEach(({ key, items }) => {
@@ -95,6 +79,26 @@ export default function Sidebar() {
     });
     setOpenSections(newOpen);
   }, [pathname]);
+
+  // useEffect(() => {
+  //   // 1️⃣ Check auth
+  //   const token = Cookies.get('token')
+  //   if (!token) {
+  //     // use replace so user can’t “back” into a protected page
+  //     router.replace('/login')
+  //     return
+  //   }
+  //   setChecked(true)
+  // }, [router])
+
+  // While we’re waiting for the token-check, render nothing (or a spinner)
+  if (!checked) return null;
+;
+
+  // State of which sections are open
+
+
+  // On mount and whenever the path changes, open the section matching the path
 
   // Toggle individual section
   const toggleSection = (key) =>
