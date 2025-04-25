@@ -2,7 +2,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Sidebar from "@/components/layout/Sidebar";
+import Sidebar from "@/components/Layout/Sidebar";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
