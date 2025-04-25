@@ -2,9 +2,9 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import Sidebar from "@/components/Layout/Sidebar";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Sidebar from './sidebar';
 
 export default function MainLayoutWrapper({ children }) {
   const pathname = usePathname();
@@ -14,6 +14,7 @@ export default function MainLayoutWrapper({ children }) {
     <>
       {!isLogin && <Sidebar />}
       {!isLogin && <Header />}
+      <
 
       {/* 
         pt-14  → push below the fixed 3.5rem (14) header  
