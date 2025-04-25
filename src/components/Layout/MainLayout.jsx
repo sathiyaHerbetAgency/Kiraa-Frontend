@@ -14,7 +14,7 @@ export default function MainLayoutWrapper({ children }) {
     <>
       {!isLogin && <Sidebar />}
       {!isLogin && <Header />}
-      <
+      
 
       {/* 
         pt-14  → push below the fixed 3.5rem (14) header  
