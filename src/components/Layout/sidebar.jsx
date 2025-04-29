@@ -113,20 +113,16 @@ export default function Sidebar() {
   };
 
   return (
-    <aside
-      className="
-        fixed inset-y-0 left-0 w-64 h-screen
-        bg-white border-r border-gray-200
-        flex flex-col overflow-y-auto
-        z-50 hidden md:flex
-      "
-    >
-      <nav className="p-4 space-y-2">
+    <aside className="no-scrollbar fixed inset-y-0 left-0 w-64 h-screen bg-white border-r border-gray-200 flex flex-col overflow-y-auto z-50 hidden md:flex">
+      <nav className=" space-y-2">
         {/* Brand */}
-        <div className="px-2 py-1 text-xl font-semibold text-black">
-          Kiraa.
-        </div>
-
+        <div className="sticky top-0 bg-white px-4 py-[13px] border-b border-gray-200 z-10 ">
+    <Link href="/" className="flex items-center">
+      <LayoutDashboard className="h-5 w-5 mr-2 text-black" />
+      <span className="text-xl font-semibold text-black">Kiraa.</span>
+    </Link>
+  </div>
+    <div className='p-2'>
         {/* Top-level links */}
         <Button
           variant="ghost"
@@ -212,6 +208,7 @@ export default function Sidebar() {
               Assets
             </Link>
           </Button>
+        </div>
         </div>
       </nav>
     </aside>

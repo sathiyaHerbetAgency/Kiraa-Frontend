@@ -435,7 +435,15 @@ a:hover {
   }
 }
 
-
+/* hide scrollbar in WebKit browsers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* hide scrollbar in Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
 
 @font-face {
     font-family: 'Inter-Semibold';
